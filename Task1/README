@@ -1,0 +1,50 @@
+Purpose
+This project is a simple Library Management System built in Java using Object-Oriented Programming (OOP) principles.
+It helps manage books by allowing users to:
+Add new books
+Issue books to people
+Return books
+Check if a book is available
+
+Key Components
+
+1. Book Class
+Stores basic book details:
+Title
+Author
+Serial Number (SNo)
+
+2. Issueable Interface
+Defines essential actions for a book:
+bookIssue(String user) – Issue the book
+returningTheBook() – Return the book
+isAvailable() – Check if available
+
+3. LibraryBook Class
+Extends Book and implements Issueable.
+Tracks whether the book is issued and keeps the user who borrowed it.
+
+4. Library Class
+Manages a collection of LibraryBook objects and provides methods to:
+Add books
+Search books by Serial Number
+
+5. Main Class
+Provides a console-based menu where users can:
+Add a new book
+Issue a book by entering its number and user
+Return a book
+Check availability
+All actions show helpful success or error messages.
+
+6. LibraryBookTest (JUnit Tests)
+Tests important cases:
+Issuing a book successfully
+Returning a book successfully
+Prevent issuing a book already issued
+Prevent returning a book not issued
+Check if a new book is available by default
+
+SUMMARY
+This project demonstrates OOP concepts like inheritance, interfaces, and exception handling in a clear, practical way.
+It’s a great starting point for learning how to build simple real-world applications using Java.
