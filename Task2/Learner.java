@@ -24,3 +24,4 @@ public class Learner {
         return fullName + " [USN: " + regNo + ", Marks: " + score + "]";
     }
 }
+
